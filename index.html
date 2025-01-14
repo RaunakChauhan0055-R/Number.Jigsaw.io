@@ -4,20 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Puzzle Game</title>
+    <title>Vibrant Number Puzzle</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>NUMBER JIGSAW</h1>
+    <div class="Num">
+        <h1 class="jig">NUMBER JIGSAW</h1>
+    </div>
     <div class="container" id="puzzle-container"></div>
     <div id="step-counter">Steps: 0</div>
     <script src="script.js"></script>
 </body>
 
 </html>
+
 <style>
-  body {
+ .Num{
+    display: inline-block;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 20%;
+    background: linear-gradient(to right, #0a8b4f, #213179);
+    border-radius: 9px;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.jig{
+   color:linear-gradient(to right, #0a8b4f, #213179);
+   align-items: center;
+}
+
+body {
     background: #0f0f0f;
     color: #fff;
     font-family: 'Poppins', sans-serif;
@@ -27,14 +48,6 @@
     height: 100vh;
     margin: 0;
     flex-direction: column;
-    text-align: center;
-}
-
-h1 {
-    color: #06b6d4;
-    text-shadow: 0 0 10px #06d440, 0 0 20px #06d440;
-    margin-bottom: 20px;
-    font-size: 2em;
 }
 
 .container {
